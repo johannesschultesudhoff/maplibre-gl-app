@@ -5,13 +5,7 @@ const INITIAL_ZOOM = 10;
 import { useEffect, useState } from 'react';
 import { Map as MapLibreMap, NavigationControl } from "maplibre-gl";
 import 'maplibre-gl/dist/maplibre-gl.css';
-import styled from 'styled-components';
-
-
-const Wrapper = styled.div`
-  height: 100%;
-  width: 100%;
-`;
+import './Map.css';
 
 const Map: React.FC = () => {
   const [mapReady, setMapReady] = useState(false);
@@ -40,6 +34,6 @@ const Map: React.FC = () => {
     });
   }, [mapReady]);
 
-  return <Wrapper ref={() => setMapReady(true)} id="map-container" />;
+  return <div className="map-wrapper" ref={() => setMapReady(true)} id="map-container" />;
 }
 export default Map;

@@ -1,0 +1,9 @@
+/* HomePage.css */
+.map-container {
+  flex: 1;
+  position: relative;
+}
+
+.header-height {
+  height: 40px;
+}
