@@ -6,3 +6,66 @@
   top: 0;
   left: 0;
 }
+
+/* MapLibre popup customization */
+.maplibregl-popup {
+  max-width: 200px;
+}
+
+.maplibregl-popup-content {
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.maplibregl-popup-content h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.maplibregl-popup-content p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* For legacy position markers (if still used) */
+.position-marker {
+  width: 12px;
+  height: 12px;
+  background-color: #3388ff;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ROI state indicators */
+.roi-active {
+  background-color: #4CAF50; /* Green */
+}
+
+.roi-inactive {
+  background-color: #F44336; /* Red */
+}
+
+.roi-warning {
+  background-color: #FF9800; /* Orange */
+}
+
+.connection-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  z-index: 1000;
+}
+
+.connection-active {
+  background-color: #4CAF50;
+}
+
+.connection-inactive {
+  background-color: #F44336;
+}
